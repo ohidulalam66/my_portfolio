@@ -1,0 +1,13 @@
+.hero-image {
+    width: 300px;
+}
+.hero-profile {
+    font-size: 18px;
+    font-weight: bold;
+}
+.language {
+    background: rgba(138, 130, 130, 0.212);
+}
+.cool-link {
+    color: black;
+}

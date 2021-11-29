@@ -1,26 +1,36 @@
 import React from 'react';
-import { Container, Nav, Navbar, Stack } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './MenuBar.css';
 
 const MenuBar = () => {
+    const resumeUrl = 'https://drive.google.com/file/d/1H8RepJLMA2AH-iLulD2GDQhWEgM0iAEE/view?usp=sharing';
     return (
         <>
-            <Navbar className="navbar py-2" variant="dark" expand="lg">
+            <Navbar className="navbar py-4" variant="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">
-                        <Stack direction="horizontal" gap={2}>
-                            <img className="Profile-img" src="https://i.ibb.co/ggLXcJq/Boss-removebg-preview.png" alt="..." />
-                            <h3 className="fw-bold">Ohidul's Portfolio</h3>
-                        </Stack>
-                    </Navbar.Brand>
+                    <Link to="/home" className="navbar-brand fw-bold cool-link">
+                        <h4 className="fw-bold text-uppercase">Mohammad Ohidul Alam</h4>
+                    </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto">
-                            <Nav.Link className="me-4 fs-5" href="#home">Home</Nav.Link>
-                            <Nav.Link className="me-4 fs-5" href="#aboutUs">About US</Nav.Link>
-                            <Nav.Link className="me-4 fs-5" href="#service">Service</Nav.Link>
-                            <Nav.Link className="me-4 fs-5" href="#contactMe">Contact Me</Nav.Link>
-                        </Nav>
+                        <ul className="navbar-nav  ms-auto">
+                            <li class="nav-item">
+                                <Link to='/projects' className="nav-link cool-link me-4 fs-5">My Projects</Link>
+                            </li>
+                            <li class="nav-item">
+                                <a className="nav-link cool-link me-4 fs-5" rel="noreferrer" href={resumeUrl} target="_blank">Resume</a>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/about" class="nav-link cool-link me-4 fs-5" aria-current="page">
+                                    About Me</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/contact" class="nav-link cool-link me-4 fs-5" aria-current="page">
+                                    Contact Me</Link>
+                            </li>
+
+                        </ul>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
