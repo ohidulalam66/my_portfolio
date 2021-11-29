@@ -1,0 +1,34 @@
+[
+    {
+        "image": "https://i.ibb.co/p0y0FgQ/juno.png",
+        "name": "Miniature Things Related - Find Your Baby Toy",
+        "start": "Nov 2021",
+        "end": "Nov 2021",
+        "details": "This is a full-stack and single-page website.This is an e-commerce project. Here, a user can purchase products according to his needs, but he has to sign in or log in with his email.This site is made up of two panels, one admin panel, and the other user panel.",
+        "technology": "React CSS3 React-router Firebase-Authentication React-bootstrap React-Hook-Form Node.js Express.js MongoDB Heroku React-Spring and React-Simple-Snackbar",
+        "live": "https://juno-baby-toys-shop.web.app/",
+        "github": "https://github.com/ohidulalam66/JUNO_baby_toys_shop",
+        "server": "https://github.com/ohidulalam66/JUNO_baby-toys-shop-server-side"
+    },
+    {
+        "image": "https://i.ibb.co/d4fb69d/travel.png",
+        "name": "Tourism Related - Travel to places in Bangladesh",
+        "start": "Oct 2021",
+        "end": "Oct 2021",
+        "details": "This project is about Tourism.This site can take you to all the interesting places in Bangladesh.In this project user and admin work together.",
+        "technology": "React React-router Firebase-Authentication React-Bootstrap React-Hook-Form Node.js Express.js and MongoDB",
+        "live": "https://travele-bd.web.app/",
+        "github": "https://github.com/ohidulalam66/traveleBD",
+        "server": "https://github.com/ohidulalam66/traveleBD_server-side"
+    },
+    {
+        "image": "https://i.ibb.co/c2b83Kk/discover.png",
+        "name": "Healthcare Related - Diagnostic Laboratory",
+        "start": "Oct 2021",
+        "end": "Oct 2021",
+        "details": "This project is about a diagnostic laboratory. This is a simple web page.Through this site, patients are booked online for various body tests.Some more functional work needs to be done with this web page, I will try that soon.",
+        "technology": "React React-Router Firebase-Authentication API-JSON and CDN-Bootstrap",
+        "live": "https://discover-diagnostic-lab.web.app/",
+        "github": "https://github.com/ohidulalam66/Discover_diagnostic-lab"
+    }
+]

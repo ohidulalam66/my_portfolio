@@ -1,0 +1,36 @@
+.hero-image {
+    width: 300px;
+}
+.hero-profile {
+    font-size: 18px;
+    font-weight: bold;
+}
+.language {
+    background: rgba(138, 130, 130, 0.212);
+}
+.cool-link {
+    color: black;
+}
+.btnDownloadResume {
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 71px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  21px 21px 30px #c3c3c3,
+             -21px -21px 30px #fdfdfd;
+}
+.btnDownloadResume:hover {
+    color: #348d86;
+} 
+
+.btnContactMe {
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 71px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  21px 21px 30px #c3c3c3,
+             -21px -21px 30px #fdfdfd;
+}
+.btnContactMe:hover {
+    color: #348d86;
+} 

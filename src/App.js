@@ -9,10 +9,11 @@ import {
 import AnimatedCursor from "react-animated-cursor";
 import MenuBar from "./Components/MenuBar/MenuBar"
 import Home from './Components/Home/Home';
+import ContactMe from './Components/ContactMe/ContactMe';
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <AnimatedCursor
                 innerSize={7}
                 outerSize={9}
@@ -32,18 +33,14 @@ function App() {
                     </Route>
                     <Route path="/projects">
                     </Route>
-
                     <Route path="/blog">
                     </Route>
-
                     <Route path="/about">
                     </Route>
-
                     <Route path="/contact">
+                        <ContactMe />
                     </Route>
-
                     <Route path="*">
-
                     </Route>
 
 
