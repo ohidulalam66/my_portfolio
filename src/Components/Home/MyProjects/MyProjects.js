@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Flip from 'react-reveal/Flip';
-// import Fade from 'react-reveal/Fade';
 import Loading from '../../Loading/Loading';
 import { Link } from 'react-router-dom';
 import SingleProject from '../SingleProject/SingleProject';
@@ -41,7 +40,7 @@ const MyProjects = () => {
                         }
                         <div className="text-center pb-5">
                             <Link to="/projects">
-                                <button className="btn btn-dark">
+                                <button className="btnContactMe text-decoration-none mx-2 px-3 py-2">
                                     See All Projects
                                 </button>
                             </Link>

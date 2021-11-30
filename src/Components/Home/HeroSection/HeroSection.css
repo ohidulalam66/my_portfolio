@@ -1,3 +1,6 @@
+.extraMargin {
+    margin-top: 100px;
+}
 .hero-image {
     width: 300px;
 }
@@ -21,6 +24,9 @@
 }
 .btnDownloadResume:hover {
     color: #348d86;
+    background: linear-gradient(145deg, #a7a4a4, #cacaca);
+    box-shadow:  21px 21px 30px #c3c3c3,
+             -21px -21px 30px #fdfdfd;
 } 
 
 .btnContactMe {
@@ -33,4 +39,7 @@
 }
 .btnContactMe:hover {
     color: #348d86;
+    background: linear-gradient(145deg, #a7a4a4, #cacaca);
+    box-shadow:  21px 21px 30px #c3c3c3,
+             -21px -21px 30px #fdfdfd;
 } 

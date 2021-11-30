@@ -10,6 +10,10 @@ import AnimatedCursor from "react-animated-cursor";
 import MenuBar from "./Components/MenuBar/MenuBar"
 import Home from './Components/Home/Home';
 import ContactMe from './Components/ContactMe/ContactMe';
+import AboutMe from './Components/AboutMe/AboutMe';
+import AllProjects from './Components/AllProjects/AllProjects';
+import MyBlog from './Components/MyBlog/MyBlog';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
     return (
@@ -32,15 +36,19 @@ function App() {
                         <Home />
                     </Route>
                     <Route path="/projects">
+                        <AllProjects />
                     </Route>
                     <Route path="/blog">
+                        <MyBlog />
                     </Route>
                     <Route path="/about">
+                        <AboutMe />
                     </Route>
                     <Route path="/contact">
                         <ContactMe />
                     </Route>
                     <Route path="*">
+                        <NotFound />
                     </Route>
 
 
