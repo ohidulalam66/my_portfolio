@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Flip from 'react-reveal/Flip';
 import Loading from '../../Loading/Loading';
 import { Link } from 'react-router-dom';
@@ -19,7 +19,7 @@ const MyProjects = () => {
     }, [])
     return (
         <Container>
-            <h3 className="py-4 text-center text-danger">
+            <h3 className="py-4 text-center text-danger mb-4  underLine">
                 <Flip top cascade>
                     <span>
                         <i className="fab fa-staylinked"></i> All Projects
@@ -30,7 +30,7 @@ const MyProjects = () => {
                 isLoading ?
                     <Loading />
                     :
-                    <div>
+                    <Row className="g-4">
                         {
                             projects.map(project =>
                                 <SingleProject
@@ -45,7 +45,7 @@ const MyProjects = () => {
                                 </button>
                             </Link>
                         </div>
-                    </div>
+                    </Row>
             }
         </Container >
     );

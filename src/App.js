@@ -14,6 +14,7 @@ import AboutMe from './Components/AboutMe/AboutMe';
 import AllProjects from './Components/AllProjects/AllProjects';
 import MyBlog from './Components/MyBlog/MyBlog';
 import NotFound from './Components/NotFound/NotFound';
+import Footer from './Components/Footer/Footer';
 
 function App() {
     return (
@@ -50,9 +51,8 @@ function App() {
                     <Route path="*">
                         <NotFound />
                     </Route>
-
-
                 </Switch>
+                <Footer />
             </Router>
         </div>
     );

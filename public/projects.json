@@ -5,7 +5,7 @@
         "start": "Nov 2021",
         "end": "Nov 2021",
         "details": "This is a full-stack and single-page website.This is an e-commerce project. Here, a user can purchase products according to his needs, but he has to sign in or log in with his email.This site is made up of two panels, one admin panel, and the other user panel.",
-        "technology": "React CSS3 React-router Firebase-Authentication React-bootstrap React-Hook-Form Node.js Express.js MongoDB Heroku React-Spring and React-Simple-Snackbar",
+        "technology": "React CSS3 React-router Firebase-Authentication React-bootstrap React-Hook-Form Node.js Express.js MongoDB Heroku React-Spring React-Simple-Snackbar",
         "live": "https://juno-baby-toys-shop.web.app/",
         "github": "https://github.com/ohidulalam66/JUNO_baby_toys_shop",
         "server": "https://github.com/ohidulalam66/JUNO_baby-toys-shop-server-side"
@@ -16,7 +16,7 @@
         "start": "Oct 2021",
         "end": "Oct 2021",
         "details": "This project is about Tourism.This site can take you to all the interesting places in Bangladesh.In this project user and admin work together.",
-        "technology": "React React-router Firebase-Authentication React-Bootstrap React-Hook-Form Node.js Express.js and MongoDB",
+        "technology": "React React-router Firebase-Authentication React-Bootstrap React-Hook-Form Node.js Express.js MongoDB",
         "live": "https://travele-bd.web.app/",
         "github": "https://github.com/ohidulalam66/traveleBD",
         "server": "https://github.com/ohidulalam66/traveleBD_server-side"
@@ -27,8 +27,38 @@
         "start": "Oct 2021",
         "end": "Oct 2021",
         "details": "This project is about a diagnostic laboratory. This is a simple web page.Through this site, patients are booked online for various body tests.Some more functional work needs to be done with this web page, I will try that soon.",
-        "technology": "React React-Router Firebase-Authentication API-JSON and CDN-Bootstrap",
+        "technology": "React React-Router Firebase-Authentication API-JSON Bootstrap",
         "live": "https://discover-diagnostic-lab.web.app/",
         "github": "https://github.com/ohidulalam66/Discover_diagnostic-lab"
+    },
+    {
+        "image": "https://i.ibb.co/dDFBy84/draw.png",
+        "name": "EveryOne Can Draw - Drawspace",
+        "start": "sep 2021",
+        "end": "sep 2021",
+        "details": "All courses for learning drawing can be found on this website.Each course is available at a lower price.Courses from beginner level to intermediate level are available here.",
+        "technology": "React React-Router API-JSON Bootstrap",
+        "live": "https://jolly-knuth-6a1d6c.netlify.app/",
+        "github": "https://github.com/ohidulalam66/drawspace"
+    },
+    {
+        "image": "https://i.ibb.co/RzDdjjB/singer.png",
+        "name": "International singers concert-2021",
+        "start": "sep 2021",
+        "end": "sep 2021",
+        "details": "Many twenty musicians will be encouraged through this concert.Many spectators rejoice in this concert.Many child musicians dream of concerts.",
+        "technology": "React API-JSON Bootstrap",
+        "live": "https://trusting-aryabhata-db3f5d.netlify.app/",
+        "github": "https://github.com/ohidulalam66/singers-concert"
+    },
+    {
+        "image": "https://i.ibb.co/6FkXQdz/walmart.png",
+        "name": "Walmart E-commerce",
+        "start": "sep 2021",
+        "end": "sep 2021",
+        "details": "Many twenty musicians will be encouraged through this concert.Many spectators rejoice in this concert.Many child musicians dream of concerts.",
+        "technology": "Javascript CSS3 API-JSON Bootstrap",
+        "live": "https://nostalgic-einstein-93cfc9.netlify.app/",
+        "github": "https://github.com/ohidulalam66/walmart-e-commerce"
     }
 ]

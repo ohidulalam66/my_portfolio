@@ -4,10 +4,10 @@ import MyProjects from './MyProjects/MyProjects';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <HeroSection />
             <MyProjects />
-        </div>
+        </>
     );
 };
 

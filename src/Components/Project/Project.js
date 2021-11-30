@@ -1,19 +1,20 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
-const SingleProject = ({ project }) => {
-    const tech = project.technology;
+import Flip from 'react-reveal/Flip';
+
+const Project = ({ p }) => {
+    const tech = p.technology;
     const techSplit = tech.split(" ");
 
     return (
-        <div>
-            <Fade bottom>
+        <>
+            <Flip top cascade>
                 <Col>
                     <Card>
-                        <Card.Img variant="top" src={project.image} />
+                        <Card.Img variant="top" src={p.image} />
                         <Card.Body>
-                            <Card.Title>{project.name}</Card.Title>
-                            <Card.Text>{project.details}</Card.Text>
+                            <Card.Title>{p.name}</Card.Title>
+                            <Card.Text>{p.details}</Card.Text>
                             <Card.Text>
                                 <b>Technology:</b>{
                                     techSplit.map(singleTech => (
@@ -28,19 +29,19 @@ const SingleProject = ({ project }) => {
                                     ))
                                 }
                             </Card.Text>
-                            <a href={project.live} target="_blank" rel="noreferrer" className="">
+                            <a href={p.live} target="_blank" rel="noreferrer" className="">
                                 <button className="btnContactMe mx-2 px-3 py-2 text-uppercase mb-md-0">
                                     <i className="fab fa-pagelines"></i> Live Website
                                 </button>
                             </a>
-                            <a href={project.github} target="_blank" rel="noreferrer" className="">
+                            <a href={p.github} target="_blank" rel="noreferrer" className="">
                                 <button className="btnContactMe mx-2 px-3 py-2 text-uppercase mb-md-0">
                                     <i className="fab fa-github-alt"></i> Client GitHub
                                 </button>
                             </a>
                             {
-                                project.server &&
-                                <a href={project.server} target="_blank" rel="noreferrer" className="">
+                                p.server &&
+                                <a href={p.server} target="_blank" rel="noreferrer" className="">
                                     <button className="btnContactMe mx-2 px-3 py-2 text-uppercase">
                                         <i className="fab fa-github-alt"></i> Server GitHub
                                     </button>
@@ -49,9 +50,9 @@ const SingleProject = ({ project }) => {
                         </Card.Body>
                     </Card>
                 </Col>
-            </Fade>
-        </div>
+            </Flip>
+        </>
     );
 };
 
-export default SingleProject;
+export default Project;

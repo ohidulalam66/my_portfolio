@@ -9,13 +9,15 @@
     font-weight: bold;
 }
 .language {
-    background: rgba(138, 130, 130, 0.212);
+    background: #CADCD9;
+    padding: 8px 15px;
 }
 .cool-link {
     color: black;
 }
 .btnDownloadResume {
     border: none;
+    font-weight: 600;
     color: rgb(0, 0, 0);
     border-radius: 71px;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
@@ -31,6 +33,7 @@
 
 .btnContactMe {
     border: none;
+    font-weight: 600;
     color: rgb(0, 0, 0);
     border-radius: 71px;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
@@ -42,4 +45,4 @@
     background: linear-gradient(145deg, #a7a4a4, #cacaca);
     box-shadow:  21px 21px 30px #c3c3c3,
              -21px -21px 30px #fdfdfd;
-} 
+}

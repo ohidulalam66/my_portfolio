@@ -1,3 +1,6 @@
 .navbar {
     background: rgba(90, 83, 87, 0.411);
 }
+li:active {
+    color: red;
+  }
