@@ -7,7 +7,7 @@ const MyBlog = () => {
     return (
         <>
             <Container className="extraMargin">
-                <h3 className="py-4 text-center text-danger mb-4  underLine">
+                <h3 className="my-5 text-center text-danger mb-4 underLine">
                     <Flip top cascade>
                         <span>
                             <i className="fab fa-blogger-b"></i> My Blog

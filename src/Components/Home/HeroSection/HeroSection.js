@@ -13,18 +13,6 @@ const HeroSection = () => {
     return (
         <Container className="py-5 extraMargin">
             <ParticlesBg color="#BBB8BA" num={100} type="cobweb" bg={true} />
-            {/* "color"
-"ball"
-"lines"
-"thick"
-"circle"
-"cobweb"
-"polygon"
-"square"
-"tadpole"
-"fountain"
-"random"
-"custom" */}
             <Row>
                 <Col sm={12} md={4}>
                     <Image className="hero-image" src={heroProfilePicUrl} roundedCircle />
@@ -32,20 +20,20 @@ const HeroSection = () => {
                 <Col sm={12} md={8} className="d-flex  align-items-center">
                     <div>
                         <Flip duration={2000} bottom cascade>
-                            <h2 className="fw-bold text-uppercase">Mohammad Ohidul Alam</h2>
+                            <h4 className="fw-bold text-uppercase fw-5">Mohammad Ohidul Alam</h4>
                         </Flip>
                         <h6 className="hero-profile"><i className="fas fa-briefcase"></i> Junior Web Developer</h6>
                         <p className="fs-5">6+ web projects, 3+ MERN Stack Projects</p>
-                        <p className="my-4">
-                            <span className="language rounded-pill me-2">JavaScript</span>
-                            <span className="language rounded-pill me-2">React</span>
-                            <span className="language rounded-pill me-2">NodeJS</span>
-                            <span className="language rounded-pill me-2">MongoDB</span>
+                        <p className="my-4 mx-auto">
+                            <span className="language me-2">JavaScript</span>
+                            <span className="language me-2">React</span>
+                            <span className="language me-2">NodeJS</span>
+                            <span className="language">MongoDB</span>
                         </p>
                         <div>
                             <a href="https://drive.google.com/uc?export=download&id=1H8RepJLMA2AH-iLulD2GDQhWEgM0iAEE" className="text-decoration-none btnDownloadResume px-3 py-2 text-uppercase" type="button"><i className="fas fa-file-download"></i> Download Resume</a>
                             <Link to='/contact'>
-                                <button className="btnContactMe mx-2 px-3 py-2 text-uppercase"><i className="fas fa-paper-plane"></i> Contact Me
+                                <button className="btnContactMe mx-0 mx-md-2 px-3 py-2 text-uppercase mt-3 mt-md-0"><i className="fas fa-paper-plane"></i> Contact Me
                                 </button>
                             </Link>
                         </div>
@@ -63,3 +51,16 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+/* "color"
+"ball"
+"lines"
+"thick"
+"circle"
+"cobweb"
+"polygon"
+"square"
+"tadpole"
+"fountain"
+"random"
+"custom" */

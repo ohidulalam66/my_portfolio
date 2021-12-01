@@ -10,7 +10,7 @@ const AboutMe = () => {
     return (
         <>
             <Container className="extraMargin">
-                <h3 className="py-4 text-danger text-center mb-4  underLine">
+                <h3 className="my-5 text-center text-danger mb-4  underLine">
                     <Flip top cascade>
                         <span>
                             <i className="fab fa-500px"></i> About Me
@@ -57,54 +57,56 @@ const AboutMe = () => {
                         </Col>
                         <Col xs={12} md={8}>
                             <Row>
-                                <div className="col flex-column trans-card pb-3">
+                                <Col className="flex-column trans-card pb-3">
                                     <i className="devicon-javascript-plain colored display-4"></i>
                                     <p className="fw-bold">JavaScript</p>
-                                </div>
-                                <div className="col flex-column trans-card pb-3">
+                                </Col>
+                                <Col className="flex-column trans-card pb-3">
                                     <i className="devicon-react-original colored display-4"></i>
                                     <p className="fw-bold">React</p>
-                                </div>
-                                <div className="col flex-column trans-card pb-3">
+                                </Col>
+                                <Col className="flex-column trans-card pb-3">
                                     <i className="devicon-nodejs-plain colored display-4"></i>
                                     <p className="fw-bold">Node.js</p>
-                                </div>
-                                <div className="col flex-column trans-card pb-3">
+                                </Col>
+                                <Col className="flex-column trans-card pb-3">
                                     <i className="devicon-express-original colored display-4"></i>
                                     <p className="fw-bold">Express.js</p>
-                                </div>
-                                <div className="col flex-column trans-card pb-3">
+                                </Col>
+                                <Col className="flex-column trans-card pb-3">
                                     <i className="devicon-mongodb-plain colored display-4"></i>
                                     <p className="fw-bold">MongoDB</p>
-                                </div>
-                            </Row>
-                            <Row>
-                                <div className="col flex-column trans-card pb-3">
-                                    <i className="devicon-bootstrap-plain colored display-4"></i>
-                                    <p className="fw-bold">Bootstrap 5</p>
-                                </div>
-                                <div className="col flex-column trans-card pb-3">
-                                    <i className="devicon-html5-plain-wordmark colored display-4"></i>
-                                    <p className="fw-bold">HTML5</p>
-                                </div>
-                                <div className="col flex-column trans-card pb-3">
-                                    <i className="devicon-css3-plain-wordmark colored display-4"></i>
-                                    <p className="fw-bold">CSS3</p>
-                                </div>
-                                <div className="col flex-column trans-card pb-3">
-                                    <i className="devicon-tailwindcss-plain colored display-4"></i>
-                                    <p className="fw-bold">Tailwind CSS</p>
-                                </div>
-                                <div className="col flex-column trans-card pb-3">
-                                    <i class="devicon-materialui-plain colored display-4"></i>
-                                    <p className="fw-bold">Material UI</p>
-                                </div>
-                            </Row>
-                            <Row>
-                                <div className="col flex-column trans-card pb-3">
+                                </Col>
+                                <Col className="flex-column trans-card pb-3">
                                     <i class="devicon-firebase-plain-wordmark colored display-4"></i>
                                     <p className="fw-bold">Firebase</p>
-                                </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="flex-column trans-card pb-3">
+                                    <i className="devicon-bootstrap-plain colored display-4"></i>
+                                    <p className="fw-bold">Bootstrap 5</p>
+                                </Col>
+                                <Col className="flex-column trans-card pb-3">
+                                    <i className="devicon-html5-plain-wordmark colored display-4"></i>
+                                    <p className="fw-bold">HTML5</p>
+                                </Col>
+                                <Col className="flex-column trans-card pb-3">
+                                    <i className="devicon-css3-plain-wordmark colored display-4"></i>
+                                    <p className="fw-bold">CSS3</p>
+                                </Col>
+                                <Col className="flex-column trans-card pb-3">
+                                    <i className="devicon-tailwindcss-plain colored display-4"></i>
+                                    <p className="fw-bold">Tailwind CSS</p>
+                                </Col>
+                                <Col className="flex-column trans-card pb-3">
+                                    <i class="devicon-materialui-plain colored display-4"></i>
+                                    <p className="fw-bold">Material UI</p>
+                                </Col>
+                                <Col className="flex-column trans-card pb-3">
+                                    <i class="devicon-git-plain-wordmark colored display-4"></i>
+                                    <p className="fw-bold">Git</p>
+                                </Col>
                             </Row>
                         </Col>
                     </Row>

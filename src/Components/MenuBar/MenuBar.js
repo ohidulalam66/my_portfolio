@@ -10,14 +10,11 @@ const MenuBar = () => {
             <Navbar className="navbar py-4 fixed-top" variant="dark" expand="lg">
                 <Container>
                     <Link to="/home" className="navbar-brand fw-bold cool-link">
-                        <h4 className="fw-bold text-uppercase"> Ohidul Alam <i className="fas fa-code"></i></h4>
+                        <h4 className="fw-bold text-uppercase">MD. Ohidul Alam</h4>
                     </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <ul className="navbar-nav  ms-auto">
-                            <li class="nav-item">
-                                <Link to='/projects' className="nav-link cool-link me-4 fs-5">My Projects</Link>
-                            </li>
                             <li class="nav-item">
                                 <Link to='/blog' className="nav-link me-4 fs-5">My Blog</Link>
                             </li>
