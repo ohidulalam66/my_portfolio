@@ -9,6 +9,7 @@ import ParticlesBg from 'particles-bg'
 
 const HeroSection = () => {
     const heroProfilePicUrl = 'https://i.ibb.co/WVTpGfn/hero.gif';
+    const resumeDownload = 'https://drive.google.com/uc?export=download&id=1FxG9MooaLk4pncrQZjQhQi0gumvVwBHU';
 
     return (
         <Container className="py-5 extraMargin">
@@ -31,7 +32,7 @@ const HeroSection = () => {
                             <span className="language">MongoDB</span>
                         </p>
                         <div>
-                            <a href="https://drive.google.com/uc?export=download&id=1H8RepJLMA2AH-iLulD2GDQhWEgM0iAEE" className="text-decoration-none btnDownloadResume px-3 py-2 text-uppercase" type="button"><i className="fas fa-file-download"></i> Download Resume</a>
+                            <a href={resumeDownload} className="text-decoration-none btnDownloadResume px-3 py-2 text-uppercase" type="button"><i className="fas fa-file-download"></i> Download Resume</a>
                             <Link to='/contact'>
                                 <button className="btnContactMe mx-0 mx-md-2 px-3 py-2 text-uppercase mt-3 mt-md-0"><i className="fas fa-paper-plane"></i> Contact Me
                                 </button>
