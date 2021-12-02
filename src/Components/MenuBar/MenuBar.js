@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Navbar } from 'react-bootstrap';
+import { Container, Image, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './MenuBar.css';
 
@@ -7,10 +7,10 @@ const MenuBar = () => {
     const resumeUrl = 'https://drive.google.com/file/d/1FxG9MooaLk4pncrQZjQhQi0gumvVwBHU/view?usp=sharing';
     return (
         <>
-            <Navbar className="navbar py-4 fixed-top" variant="dark" expand="lg">
+            <Navbar className="navbar py-1 fixed-top" variant="dark" expand="lg">
                 <Container>
-                    <Link to="/home" className="navbar-brand fw-bold cool-link">
-                        <h4 className="fw-bold text-uppercase">MD. Ohidul Alam</h4>
+                    <Link to="/home" className="navbar-brand fw-bold">
+                        <Image src="https://i.ibb.co/djZtpFt/OA-logo.png" className="heroLogo" />
                     </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -29,7 +29,6 @@ const MenuBar = () => {
                                 <Link to="/contact" class="nav-link me-4 fs-5" aria-current="page">
                                     Contact Me</Link>
                             </li>
-
                         </ul>
                     </Navbar.Collapse>
                 </Container>
