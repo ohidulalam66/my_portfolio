@@ -1,0 +1,12 @@
+{
+    "id": 2,
+    "image": "https://i.ibb.co/gM0VRVc/travele2.png",
+    "name": "Tourism Related - Travel to places in Bangladesh",
+    "start": "Oct 2021",
+    "end": "Oct 2021",
+    "details": "This project is about Tourism.This site can take you to all the interesting places in Bangladesh.In this project user and admin work together.",
+    "technology": "React React-router Firebase-Authentication React-Bootstrap React-Hook-Form Node.js Express.js MongoDB",
+    "live": "https://travele-bd.web.app/",
+    "github": "https://github.com/ohidulalam66/traveleBD",
+    "server": "https://github.com/ohidulalam66/traveleBD_server-side"
+}

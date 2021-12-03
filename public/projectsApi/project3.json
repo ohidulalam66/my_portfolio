@@ -1,0 +1,11 @@
+{
+    "id": 3,
+    "image": "https://i.ibb.co/5LcpkWQ/discover3.png",
+    "name": "Healthcare Related - Diagnostic Laboratory",
+    "start": "Oct 2021",
+    "end": "Oct 2021",
+    "details": "This project is about a diagnostic laboratory. This is a simple web page.Through this site, patients are booked online for various body tests.Some more functional work needs to be done with this web page, I will try that soon.",
+    "technology": "React React-Router Firebase-Authentication API-JSON Bootstrap",
+    "live": "https://discover-diagnostic-lab.web.app/",
+    "github": "https://github.com/ohidulalam66/Discover_diagnostic-lab"
+}

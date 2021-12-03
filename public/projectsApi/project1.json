@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "image": "https://i.ibb.co/TBt841d/juno1.png",
+    "name": "Miniature Things Related - Find Your Baby Toy",
+    "start": "Nov 2021",
+    "end": "Nov 2021",
+    "details": "This is a full-stack and single-page website.This is an e-commerce project. Here, a user can purchase products according to his needs, but he has to sign in or log in with his email.This site is made up of two panels, one admin panel, and the other user panel.",
+    "technology": "React CSS3 React-router Firebase-Authentication React-bootstrap React-Hook-Form Node.js Express.js MongoDB Heroku React-Spring React-Simple-Snackbar",
+    "live": "https://juno-baby-toys-shop.web.app/",
+    "github": "https://github.com/ohidulalam66/JUNO_baby_toys_shop",
+    "server": "https://github.com/ohidulalam66/JUNO_baby-toys-shop-server-side"
+}

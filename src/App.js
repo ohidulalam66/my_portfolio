@@ -4,7 +4,6 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-
 } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
 import MenuBar from "./Components/MenuBar/MenuBar"
@@ -14,6 +13,7 @@ import AboutMe from './Components/AboutMe/AboutMe';
 import MyBlog from './Components/MyBlog/MyBlog';
 import NotFound from './Components/NotFound/NotFound';
 import Footer from './Components/Footer/Footer';
+import ProjectDetail from './Components/ProjectDetail/ProjectDetail';
 
 function App() {
     return (
@@ -34,6 +34,9 @@ function App() {
                     </Route>
                     <Route path="/home">
                         <Home />
+                    </Route>
+                    <Route path="/projects/:projectId">
+                        <ProjectDetail />
                     </Route>
                     <Route path="/blog">
                         <MyBlog />
