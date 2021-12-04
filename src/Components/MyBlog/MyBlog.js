@@ -10,7 +10,7 @@ const MyBlog = () => {
                 <h3 className="my-5 text-center text-danger mb-4 underLine">
                     <Flip top cascade>
                         <span>
-                            <i className="fab fa-blogger-b"></i> My Blog
+                            <i className="fas fa-blog"></i> My Blog
                         </span>
                     </Flip>
                 </h3>

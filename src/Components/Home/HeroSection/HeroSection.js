@@ -5,15 +5,16 @@ import { Link } from "react-router-dom";
 import Bounce from 'react-reveal/Bounce';
 import Flip from 'react-reveal/Flip';
 import ParticlesBg from 'particles-bg'
+import { Typewriter } from 'react-simple-typewriter'
 
 
 const HeroSection = () => {
     const heroProfilePicUrl = 'https://i.ibb.co/WVTpGfn/hero.gif';
-    const resumeDownload = 'https://drive.google.com/uc?export=download&id=1FxG9MooaLk4pncrQZjQhQi0gumvVwBHU';
+    const resumeDownload = 'https://drive.google.com/uc?export=download&id=1QmnFbCqVAdczIMexuwYg8V4sgSCuax4O';
 
     return (
         <Container className="py-5 extraMargin">
-            <ParticlesBg color="#BBB8BA" num={100} type="cobweb" bg={true} />
+            <ParticlesBg color="#afd4cd" num={100} type="cobweb" bg={true} />
             <Row>
                 <Col sm={12} md={4}>
                     <Image className="hero-image" src={heroProfilePicUrl} roundedCircle />
@@ -23,7 +24,18 @@ const HeroSection = () => {
                         <Flip duration={2000} bottom cascade>
                             <h4 className="fw-bold text-uppercase fw-5">Mohammad Ohidul Alam</h4>
                         </Flip>
-                        <h6 className="hero-profile"><i className="fas fa-briefcase"></i> Junior Web Developer</h6>
+                        <h5 className="hero-profile">
+                            <i className="fas fa-briefcase"></i> A {' '}<span style={{ color: '#CADCD9', fontWeight: 'bold', fontSize: '20px' }}>
+                                {/* Style will be inherited from the parent element */}
+                                <Typewriter
+                                    words={['Front-End', 'React', 'MERN-Stack']}
+                                    loop={20}
+                                    typeSpeed={100}
+                                    deleteSpeed={80}
+                                    delaySpeed={2000}
+                                />
+                            </span> Developer
+                        </h5>
                         <p className="fs-5">6+ web projects, 3+ MERN Stack Projects</p>
                         <p className="my-4 mx-auto">
                             <span className="language me-2">JavaScript</span>
@@ -42,7 +54,7 @@ const HeroSection = () => {
                 </Col>
             </Row>
             <Bounce bottom>
-                <p className="text-secondary mt-5">
+                <p className="mt-5">
                     <span className="fs-2 fw-bold">Hi there!</span> I'm Mohammad Ohidul Alam from Bangladesh, and I work in Junior Web Development. I am currently studying BSc at Premier University through CSE. I really enjoy working as well as learning languages and frameworks like JS, React JS. Also, I have ideas about Bootstrap, React Bootstrap, Tailwind CSS, and Material UI about my Design. Node JS, Express, and MongoDB also have ideas about the backend. I have experience of 10+ web <Link to='/projects' className="text-decoration-none cool-link fw-bold">projects</Link> by using JavaScript, React.js, Node.js, MongoDB and other technologies. I have also solid knowledge of CSS framework like bootstrap, tailwind, material-ui. Outside of programming, I enjoy reading books, arts and gardening.
                     Lastly, I like to code.🌭 This is my hobby.😍
                 </p>

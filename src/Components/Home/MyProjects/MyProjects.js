@@ -56,7 +56,7 @@ const MyProjects = () => {
                                     <div className="text-center pb-5">
                                         <Link to={`/projects/1`}>
                                             <button className="btnContactMe text-decoration-none mx-2 my-5 px-3 py-2">
-                                                Detail
+                                                <i className="fas fa-info-circle"></i> Detail
                                             </button>
                                         </Link>
                                     </div>
@@ -73,7 +73,7 @@ const MyProjects = () => {
                                     <div className="text-center pb-5">
                                         <Link to={`/projects/2`}>
                                             <button className="btnContactMe text-decoration-none mx-2 my-5 px-3 py-2">
-                                                Detail
+                                                <i className="fas fa-info-circle"></i> Detail
                                             </button>
                                         </Link>
                                     </div>
@@ -90,7 +90,7 @@ const MyProjects = () => {
                                     <div className="text-center pb-5">
                                         <Link to={`/projects/3`}>
                                             <button className="btnContactMe text-decoration-none mx-2 my-5 px-3 py-2">
-                                                Detail
+                                                <i className="fas fa-info-circle"></i> Detail
                                             </button>
                                         </Link>
                                     </div>
@@ -103,7 +103,7 @@ const MyProjects = () => {
             <div className="text-center">
                 <Link to="/projects">
                     <button className="btnContactMe text-decoration-none mx-2 px-3 py-2">
-                        See All Projects
+                        <i className="fas fa-project-diagram"></i> See All Projects
                     </button>
                 </Link>
             </div>

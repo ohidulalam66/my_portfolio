@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="footerColor">
                 <Container>
                     <Slide left>
-                        <p className="text-center">Site Code & designed by Mohammad Ohidul Alam</p>
+                        <p className="text-center">Site Code & designed by @2021 Mohammad Ohidul Alam</p>
                     </Slide>
                 </Container>
             </div>

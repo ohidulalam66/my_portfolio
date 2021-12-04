@@ -13,7 +13,7 @@ const AboutMe = () => {
                 <h3 className="my-5 text-center text-danger mb-4  underLine">
                     <Flip top cascade>
                         <span>
-                            <i className="fab fa-500px"></i> About Me
+                            <i className="far fa-address-card"></i> About Me
                         </span>
                     </Flip>
                 </h3>

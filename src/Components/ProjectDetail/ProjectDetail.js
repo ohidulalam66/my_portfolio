@@ -26,7 +26,7 @@ const ProjectDetail = () => {
                 <h3 className="my-5 text-center text-danger mb-4 underLine">
                     <Flip top cascade>
                         <span>
-                            <i className="fab fa-staylinked"></i> Project Detail
+                            <i className="fas fa-info-circle"></i> Project Detail
                         </span>
                     </Flip>
                 </h3>

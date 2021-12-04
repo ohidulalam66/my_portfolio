@@ -8,6 +8,12 @@ import Form from './Form/Form';
 
 const ContactMe = () => {
     const ContactPicUrl = "https://www.emailjs.com/assets/support.svg";
+    // social link
+    const heroEmail = "mdohidul.alam15@gmail.com";
+    const linkedInUrl = "https://www.linkedin.com/in/mohammad-ohidul-alam/";
+    const gitHubUrl = "https://github.com/ohidulalam66";
+    const twitterUrl = "https://twitter.com/OaNoyon";
+
     return (
         <Container className="extraMargin">
             <h3 className="my-5 text-center text-danger mb-4 underLine">
@@ -30,26 +36,26 @@ const ContactMe = () => {
                         <div className="mt-4">
                             <LightSpeed left>
                                 <h6><i className="fas fa-phone-alt"></i> +8801628435721</h6>
-                                <h6><i className="fas fa-envelope-open"></i> mdohidul.alam15@gmail.com</h6>
+                                <h6><i className="fas fa-envelope-open"></i> {heroEmail}</h6>
                             </LightSpeed>
                             <p className="mt-5">
                                 <Bounce duration={1000}>
                                     <button>
-                                        <a href="https://www.linkedin.com/in/mohammad-ohidul-alam-06a506216/" rel="noreferrer" target="_blank" className="me-2 linkedin btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
+                                        <a href={linkedInUrl} rel="noreferrer" target="_blank" className="me-2 linkedin btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
                                             <i className="fab fa-linkedin-in"></i> LinkedIn
                                         </a>
                                     </button>
                                 </Bounce>
                                 <Bounce duration={1500}>
                                     <button>
-                                        <a href="https://github.com/ohidulalam66" rel="noreferrer" target="_blank" className="me-2 github btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
+                                        <a href={gitHubUrl} rel="noreferrer" target="_blank" className="me-2 github btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
                                             <i className="fab fa-github"></i> GitHub
                                         </a>
                                     </button>
                                 </Bounce>
                                 <Bounce duration={2000}>
                                     <button>
-                                        <a href="https://twitter.com/OaNoyon" rel="noreferrer" target="_blank" className="me-2 twitter btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
+                                        <a href={twitterUrl} rel="noreferrer" target="_blank" className="me-2 twitter btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
                                             <i className="fab fa-twitter"></i> Twitter
                                         </a>
                                     </button>
