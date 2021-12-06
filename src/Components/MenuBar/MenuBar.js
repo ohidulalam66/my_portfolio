@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './MenuBar.css';
 
 const MenuBar = () => {
-    const resumeUrl = 'https://drive.google.com/file/d/1QmnFbCqVAdczIMexuwYg8V4sgSCuax4O/view?usp=sharing';
+    const resumeUrl = 'https://drive.google.com/file/d/1F28YGvvIAcv16ns5qtdGRrMx9kqHUC4e/view?usp=sharing';
     return (
         <>
             <Navbar className="navbar fixed-top" variant="light" expand="lg">

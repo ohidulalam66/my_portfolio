@@ -10,7 +10,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const HeroSection = () => {
     const heroProfilePicUrl = 'https://i.ibb.co/WVTpGfn/hero.gif';
-    const resumeDownload = 'https://drive.google.com/uc?export=download&id=1QmnFbCqVAdczIMexuwYg8V4sgSCuax4O';
+    const resumeDownload = 'https://drive.google.com/uc?export=download&id=1F28YGvvIAcv16ns5qtdGRrMx9kqHUC4e';
 
     return (
         <Container className="py-5 extraMargin">
