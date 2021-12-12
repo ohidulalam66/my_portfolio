@@ -16,6 +16,9 @@ const MenuBar = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <ul className="navbar-nav  ms-auto">
                             <li class="nav-item">
+                                <Link to='/allProjects' className="nav-link me-4 fs-5"><i className="fas fa-blog"></i> All Projects</Link>
+                            </li>
+                            <li class="nav-item">
                                 <Link to='/blog' className="nav-link me-4 fs-5"><i className="fas fa-blog"></i> My Blog</Link>
                             </li>
                             <li class="nav-item">

@@ -21,7 +21,7 @@ const MyProjects = () => {
             <h3 className="my-5 text-center text-danger mb-4 underLine">
                 <Flip top cascade>
                     <span>
-                        <i className="fab fa-staylinked"></i> All Projects
+                        <i className="fab fa-staylinked"></i> Projects
                     </span>
                 </Flip>
             </h3>

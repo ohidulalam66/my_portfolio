@@ -10,6 +10,7 @@ import MenuBar from "./Components/MenuBar/MenuBar"
 import Home from './Components/Home/Home';
 import ContactMe from './Components/ContactMe/ContactMe';
 import AboutMe from './Components/AboutMe/AboutMe';
+import AllProjects from './Components/AllProjects/AllProjects';
 import MyBlog from './Components/MyBlog/MyBlog';
 import NotFound from './Components/NotFound/NotFound';
 import Footer from './Components/Footer/Footer';
@@ -37,6 +38,9 @@ function App() {
                     </Route>
                     <Route path="/projects/:projectId">
                         <ProjectDetail />
+                    </Route>
+                    <Route path="/allProjects">
+                        <AllProjects />
                     </Route>
                     <Route path="/blog">
                         <MyBlog />

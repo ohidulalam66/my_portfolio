@@ -15,28 +15,28 @@ const HeroSection = () => {
     return (
         <Container className="py-5 extraMargin">
             <ParticlesBg color="#afd4cd" num={100} type="cobweb" bg={true} />
-            <Row>
+            <Row className='d-flex justify-content-center align-items-center'>
                 <Col sm={12} md={4}>
-                    <Image className="hero-image" src={heroProfilePicUrl} roundedCircle />
+                    <Image className="hero-image img-fluid" src={heroProfilePicUrl} roundedCircle />
                 </Col>
-                <Col sm={12} md={8} className="d-flex  align-items-center">
+                <Col sm={12} md={8} className="mt-5 mt-md-0">
                     <div>
                         <Flip duration={2000} bottom cascade>
                             <h4 className="fw-bold text-uppercase fw-5">Mohammad Ohidul Alam</h4>
                         </Flip>
                         <h5 className="hero-profile">
-                            <i className="fas fa-briefcase"></i> A {' '}<span style={{ color: '#CADCD9', fontWeight: 'bold', fontSize: '20px' }}>
+                            <i className="fas fa-briefcase"></i> A {' '}<span style={{ color: 'red', fontWeight: 'bold', fontSize: '20px' }}>
                                 {/* Style will be inherited from the parent element */}
                                 <Typewriter
                                     words={['Front-End', 'React', 'MERN-Stack']}
-                                    loop={20}
+                                    loop={50}
                                     typeSpeed={100}
                                     deleteSpeed={80}
                                     delaySpeed={2000}
                                 />
                             </span> Developer
                         </h5>
-                        <p className="fs-5">6+ web projects, 3+ MERN Stack Projects</p>
+                        <p className="fs-5">3+ MERN Stack Projects, 6+ web projects</p>
                         <p className="my-4 mx-auto">
                             <span className="language me-2">JavaScript</span>
                             <span className="language me-2">React</span>
