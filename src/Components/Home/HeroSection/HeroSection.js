@@ -36,7 +36,7 @@ const HeroSection = () => {
                                 />
                             </span> Developer
                         </h5>
-                        <p className="fs-5">3+ MERN Stack Projects, 6+ web projects</p>
+                        <p className="fs-5">3+ MERN Stack Projects, 10+ web projects</p>
                         <p className="my-4 mx-auto">
                             <span className="language me-2">JavaScript</span>
                             <span className="language me-2">React</span>

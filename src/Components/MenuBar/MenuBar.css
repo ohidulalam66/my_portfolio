@@ -1,6 +1,9 @@
 .navbar {
-    background: rgba(90, 83, 87, 0.411);
+    background: rgba(66, 62, 64, 0.541);
 }
 .heroLogo {
-    width: 70px;
+    width: 65px;
+}
+.nav-link {
+    font-size: 18px;
 }
