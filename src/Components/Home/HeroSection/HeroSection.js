@@ -3,7 +3,8 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 import './HeroSection.css';
 import { Link } from "react-router-dom";
 import Bounce from 'react-reveal/Bounce';
-import Flip from 'react-reveal/Flip';
+import RubberBand from 'react-reveal/RubberBand';
+import Zoom from 'react-reveal/Zoom';
 import ParticlesBg from 'particles-bg'
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -20,10 +21,10 @@ const HeroSection = () => {
                     <Image className="hero-image img-fluid" src={heroProfilePicUrl} roundedCircle />
                 </Col>
                 <Col sm={12} md={8} className="mt-5 mt-md-0">
-                    <div>
-                        <Flip duration={2000} bottom cascade>
+                    <Zoom top duration={1000} cascade>
+                        <RubberBand>
                             <h4 className="fw-bold text-uppercase fw-5">Mohammad Ohidul Alam</h4>
-                        </Flip>
+                        </RubberBand>
                         <h5 className="hero-profile">
                             <i className="fas fa-briefcase"></i> A {' '}<span style={{ color: 'red', fontWeight: 'bold', fontSize: '20px' }}>
                                 {/* Style will be inherited from the parent element */}
@@ -50,7 +51,7 @@ const HeroSection = () => {
                                 </button>
                             </Link>
                         </div>
-                    </div>
+                    </Zoom>
                 </Col>
             </Row>
             <Bounce bottom>
