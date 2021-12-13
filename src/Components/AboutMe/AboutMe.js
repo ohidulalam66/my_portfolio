@@ -83,27 +83,27 @@ const AboutMe = () => {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col className="flex-column trans-card pb-3">
+                                <Col className="flex-column pb-3">
                                     <i className="devicon-bootstrap-plain colored display-4"></i>
                                     <p className="fw-bold">Bootstrap 5</p>
                                 </Col>
-                                <Col className="flex-column trans-card pb-3">
+                                <Col className="flex-column pb-3">
                                     <i className="devicon-html5-plain-wordmark colored display-4"></i>
                                     <p className="fw-bold">HTML5</p>
                                 </Col>
-                                <Col className="flex-column trans-card pb-3">
+                                <Col className="flex-column pb-3">
                                     <i className="devicon-css3-plain-wordmark colored display-4"></i>
                                     <p className="fw-bold">CSS3</p>
                                 </Col>
-                                <Col className="flex-column trans-card pb-3">
+                                <Col className="flex-column pb-3">
                                     <i className="devicon-tailwindcss-plain colored display-4"></i>
                                     <p className="fw-bold">Tailwind CSS</p>
                                 </Col>
-                                <Col className="flex-column trans-card pb-3">
+                                <Col className="flex-column pb-3">
                                     <i class="devicon-materialui-plain colored display-4"></i>
                                     <p className="fw-bold">Material UI</p>
                                 </Col>
-                                <Col className="flex-column trans-card pb-3">
+                                <Col className="flex-column pb-3">
                                     <i class="devicon-git-plain-wordmark colored display-4"></i>
                                     <p className="fw-bold">Git</p>
                                 </Col>

@@ -1,5 +1,20 @@
-.footerColor {
-    background: #BBB8BA;
+.firstFooter {
     padding: 20px 0px;
-    margin-top: 70px;
+    background: #BBB8BA;
+    margin-top: 50px;
+    color: white;
+}
+.footerHeroLogo {
+    width: 150px;
+}
+.footer-link {
+    color: white;
+    font-size: 13x;
+}
+.footer-link:hover {
+    color: black;
+}
+.secondFooter {
+    background: #302f2fce;
+    padding: 20px 0px;
 }

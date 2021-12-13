@@ -29,7 +29,7 @@ const AllProjects = () => {
                     isLoading ?
                         <Loading />
                         :
-                        <Fade right cascade duration={2000}>
+                        <Fade bottom cascade>
                             <div>
                                 {
                                     projects.map(project =>
@@ -45,19 +45,19 @@ const AllProjects = () => {
                                                 <p><span className="fw-bold">Details: </span>{project?.details}</p>
                                                 <div className="mt-4">
                                                     <button>
-                                                        <a href={project.live} rel="noreferrer" target="_blank" className="me-2 btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
+                                                        <a href={project?.live} rel="noreferrer" target="_blank" className="me-2 btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
                                                             Live
                                                         </a>
                                                     </button>
                                                     <button>
-                                                        <a href={project.github} rel="noreferrer" target="_blank" className="me-2 btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
+                                                        <a href={project?.github} rel="noreferrer" target="_blank" className="me-2 btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
                                                             GitHub
                                                         </a>
                                                     </button>
                                                     {
                                                         project?.server &&
                                                         <button>
-                                                            <a href={project.server} rel="noreferrer" target="_blank" className="me-2 btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
+                                                            <a href={project?.server} rel="noreferrer" target="_blank" className="me-2 btnLink text-decoration-none px-3 py-2 my-5 my-md-0">
                                                                 Server
                                                             </a>
                                                         </button>
