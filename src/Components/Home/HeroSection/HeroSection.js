@@ -17,7 +17,7 @@ const HeroSection = () => {
         <Container className="py-5 extraMargin">
             <ParticlesBg color="#afd4cd" num={100} type="cobweb" bg={true} />
             <Row className='d-flex justify-content-center align-items-center'>
-                <Col sm={12} md={4}>
+                <Col sm={12} md={4} style={{ textAlign: "center" }}>
                     <Image className="hero-image img-fluid" src={heroProfilePicUrl} roundedCircle />
                 </Col>
                 <Col sm={12} md={8} className="mt-5 mt-md-0">
