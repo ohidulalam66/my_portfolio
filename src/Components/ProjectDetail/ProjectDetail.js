@@ -44,7 +44,7 @@ const ProjectDetail = () => {
                             </Row>
                             <Row className="my-4">
                                 <Col sm={12} md={6}>
-                                    <h3>{project.name}</h3>
+                                    <h3 className='fw-bold text-danger'>{project.name}</h3>
                                     <p><span className="fw-bold">Start:</span> {project.start}</p>
                                     <p><span className="fw-bold">End:</span> {project.end}</p>
                                     <p><span className="fw-bold">Technology:</span> {project.technology}</p>

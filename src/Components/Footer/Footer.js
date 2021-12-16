@@ -7,6 +7,10 @@ import { Flip, Fade } from 'react-reveal';
 
 const Footer = () => {
     const resumeUrl = 'https://drive.google.com/file/d/1F28YGvvIAcv16ns5qtdGRrMx9kqHUC4e/view?usp=sharing';
+    const linkedInLink = 'https://www.linkedin.com/in/mohammad-ohidul-alam/';
+    const gitHubLink = 'https://github.com/ohidulalam66';
+    const twitterLink = 'https://twitter.com/OaNoyon';
+    const facebookLink = 'https://www.facebook.com/mohammadohidulalam.moa';
     return (
         <>
             <div className="firstFooter">
@@ -50,16 +54,16 @@ const Footer = () => {
                             <hr />
                             <Fade bottom cascade duration={2000}>
                                 <div className='d-flex justify-content-center'>
-                                    <a className='text-decoration-none' href="https://www.linkedin.com/in/mohammad-ohidul-alam/">
+                                    <a className='text-decoration-none' href={linkedInLink}>
                                         <i class="devicon-linkedin-plain colored display-6 m-2"></i>
                                     </a>
-                                    <a className='text-decoration-none' href="https://github.com/ohidulalam66">
+                                    <a className='text-decoration-none' href={gitHubLink}>
                                         <i class="devicon-github-original colored display-6 m-2"></i>
                                     </a>
-                                    <a className='text-decoration-none' href="https://twitter.com/OaNoyon">
+                                    <a className='text-decoration-none' href={twitterLink}>
                                         <i class="devicon-twitter-original colored display-6 m-2"></i>
                                     </a>
-                                    <a className='text-decoration-none' href="https://www.facebook.com/mohammadohidulalam.moa">
+                                    <a className='text-decoration-none' href={facebookLink}>
                                         <i className="devicon-facebook-plain colored display-6 m-2"></i>
                                     </a>
                                 </div>

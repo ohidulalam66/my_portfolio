@@ -38,7 +38,7 @@ const AllProjects = () => {
                                                 <Image src={project?.image} className='img-fluid' />
                                             </Col>
                                             <Col sm={12} md={6} className='mt-5 mt-md-0'>
-                                                <h4 className='fw-bold'>{project?.name}</h4>
+                                                <h4 className='fw-bold text-danger'>{project?.name}</h4>
                                                 <p><span className='fw-bold'>Start: </span>{project?.start}</p>
                                                 <p><span className='fw-bold'>End: </span>{project?.end}</p>
                                                 <p><span className="fw-bold">Technology: </span>{project?.technology}</p>

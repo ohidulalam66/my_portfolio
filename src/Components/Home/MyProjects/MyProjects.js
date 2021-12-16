@@ -47,10 +47,10 @@ const MyProjects = () => {
                             "slideShadows": true
                         }} pagination={true} className="mySwiper">
                         <SwiperSlide>
-                            <Card.Img variant="top" className="w-100 img-fluid" src="https://i.ibb.co/TBt841d/juno1.png" />
+                            <Card.Img variant="top" className="w-100 img-fluid" src="https://i.ibb.co/Q89GmBY/Screenshot-1.png" />
                             <Card.Body>
                                 <Card.Title>
-                                    <h5>Miniature Things Related - Find Your Baby Toy</h5>
+                                    <h5 className='fw-bold text-danger'>Miniature Things Related - Find Your Baby Toy</h5>
                                 </Card.Title>
                                 <Card.Text>
                                     <div className="text-center pb-5">
@@ -67,7 +67,7 @@ const MyProjects = () => {
                             <Card.Img variant="top" className="w-100 img-fluid" src="https://i.ibb.co/gM0VRVc/travele2.png" />
                             <Card.Body>
                                 <Card.Title>
-                                    <h5>Tourism Related - Travel to places in Bangladesh</h5>
+                                    <h5 className='fw-bold text-danger'>Tourism Related - Travel to places in Bangladesh</h5>
                                 </Card.Title>
                                 <Card.Text>
                                     <div className="text-center pb-5">
@@ -84,7 +84,7 @@ const MyProjects = () => {
                             <Card.Img variant="top" className="w-100 img-fluid" src="https://i.ibb.co/5LcpkWQ/discover3.png" />
                             <Card.Body>
                                 <Card.Title>
-                                    <h5>Healthcare Related - Diagnostic Laboratory</h5>
+                                    <h5 className='fw-bold text-danger'>Healthcare Related - Diagnostic Laboratory</h5>
                                 </Card.Title>
                                 <Card.Text>
                                     <div className="text-center pb-5">
@@ -101,7 +101,7 @@ const MyProjects = () => {
                 </Fade>
             </Row>
             <div className="text-center">
-                <Link to="/projects">
+                <Link to="/allProjects">
                     <button className="btnContactMe text-decoration-none mx-2 px-3 py-2">
                         <i className="fas fa-project-diagram"></i> See All Projects
                     </button>
