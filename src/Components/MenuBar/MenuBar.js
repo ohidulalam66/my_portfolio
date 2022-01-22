@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Image, Navbar } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './MenuBar.css';
 
@@ -9,9 +9,6 @@ const MenuBar = () => {
         <>
             <Navbar className="navbar fixed-top" variant="dark" expand="lg">
                 <Container>
-                    <Link to="/home" className="navbar-brand fw-bold">
-                        <Image src="https://i.ibb.co/djZtpFt/OA-logo.png" className="heroLogo" />
-                    </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <ul className="navbar-nav  ms-auto">
