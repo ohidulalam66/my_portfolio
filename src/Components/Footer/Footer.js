@@ -17,11 +17,11 @@ const Footer = () => {
       <div className="firstFooter">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
-            <Col sm={12} md={4} className="d-flex justify-content-center">
+            <Col sm={12} md={4} className="text-center">
               <Fade left cascade duration={2000}>
                 <Image
-                  className="w-100 img-fluid rounded-circle"
-                  src="https://i.ibb.co/ggLXcJq/Boss-removebg-preview.png"
+                  className="w-50 img-fluid"
+                  src="https://i.ibb.co/jWFZ9JG/ohid-s-logo-removebg-preview.png"
                 />
                 <div>
                   <h4>Mohammad Ohidul Alam</h4>
@@ -29,13 +29,13 @@ const Footer = () => {
                     <i className="fas fa-phone-alt"></i> +8801628435721
                   </h6>
                   <h6>
-                    <i className="fas fa-envelope-open"></i>{' '}
+                    <i className="fas fa-envelope-open"></i>
                     mdohidul.alam15@gmail.com
                   </h6>
                 </div>
               </Fade>
             </Col>
-            <Col sm={12} md={2} className="mt-3 mt-md-0">
+            <Col sm={12} md={4} className="mt-3 mt-md-0">
               <div>
                 <Flip top cascade>
                   <h5 className="fw-bold text-dark">
@@ -77,7 +77,7 @@ const Footer = () => {
                 </Fade>
               </div>
             </Col>
-            <Col sm={12} md={2} className="mt-3 mt-md-0">
+            <Col sm={12} md={4} className="mt-3 mt-md-0">
               <Flip top cascade>
                 <h5 className="fw-bold text-dark">
                   <i className="fas fa-people-arrows"></i> SOCIAL LINK
