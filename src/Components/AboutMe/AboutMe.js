@@ -1,10 +1,10 @@
-import React from 'react'
-import './AboutMe.css'
-import Flip from 'react-reveal/Flip'
-import Fade from 'react-reveal/Fade'
-import Roll from 'react-reveal/Roll'
-import { Link } from 'react-router-dom'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from 'react';
+import './AboutMe.css';
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
+import Roll from 'react-reveal/Roll';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const AboutMe = () => {
   return (
@@ -162,7 +162,7 @@ const AboutMe = () => {
         </Fade>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;

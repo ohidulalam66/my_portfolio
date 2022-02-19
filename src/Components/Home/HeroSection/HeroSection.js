@@ -1,18 +1,17 @@
-import React from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap'
-import './HeroSection.css'
-import { Link } from 'react-router-dom'
-import Bounce from 'react-reveal/Bounce'
-import RubberBand from 'react-reveal/RubberBand'
-import Zoom from 'react-reveal/Zoom'
-import ParticlesBg from 'particles-bg'
-import { Typewriter } from 'react-simple-typewriter'
+import React from 'react';
+import { Col, Container, Image, Row } from 'react-bootstrap';
+import './HeroSection.css';
+import { Link } from 'react-router-dom';
+import Bounce from 'react-reveal/Bounce';
+import RubberBand from 'react-reveal/RubberBand';
+import Zoom from 'react-reveal/Zoom';
+import ParticlesBg from 'particles-bg';
+import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
-  const heroProfilePicUrl = 'https://i.ibb.co/WVTpGfn/hero.gif'
+  const heroProfilePicUrl = 'https://i.ibb.co/WVTpGfn/hero.gif';
   const resumeDownload =
-    'https://drive.google.com/uc?export=download&id=1F28YGvvIAcv16ns5qtdGRrMx9kqHUC4e'
-
+    'https://drive.google.com/uc?export=download&id=1F28YGvvIAcv16ns5qtdGRrMx9kqHUC4e';
   return (
     <Container className="pb-5 extraMargin">
       <ParticlesBg color="#afd4cd" num={100} type="cobweb" bg={true} />
@@ -95,10 +94,10 @@ const HeroSection = () => {
         </p>
       </Bounce>
     </Container>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
 
 /* "color"
 "ball"

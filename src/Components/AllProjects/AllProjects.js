@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap'
-import { Flip, Fade } from 'react-reveal'
-import './AllProjects.css'
-import Loading from '../Loading/Loading'
+import React, { useEffect, useState } from 'react';
+import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Flip, Fade } from 'react-reveal';
+import './AllProjects.css';
+import Loading from '../Loading/Loading';
 
 const AllProjects = () => {
-  const [projects, setProjects] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
+  const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const url = './projects.json'
+    const url = './projects.json';
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProjects(data))
-    setIsLoading(false)
-  }, [])
+    setIsLoading(false);
+  }, []);
+
   return (
     <>
       <Container>
@@ -85,17 +86,17 @@ const AllProjects = () => {
                             Server
                           </a>
                         </button>
-                      )}
+                      )};
                     </div>
                   </Col>
                 </Row>
-              ))}
+              ))};
             </div>
           </Fade>
-        )}
+        )};
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default AllProjects
+export default AllProjects;

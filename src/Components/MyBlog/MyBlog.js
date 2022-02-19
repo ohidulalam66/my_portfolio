@@ -1,7 +1,7 @@
-import React from 'react'
-import { Container, Image } from 'react-bootstrap'
-import Flip from 'react-reveal/Flip'
-import Bounce from 'react-reveal/Bounce'
+import React from 'react';
+import { Container, Image } from 'react-bootstrap';
+import Flip from 'react-reveal/Flip';
+import Bounce from 'react-reveal/Bounce';
 
 const MyBlog = () => {
   return (
@@ -24,7 +24,7 @@ const MyBlog = () => {
         </Bounce>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default MyBlog
+export default MyBlog;

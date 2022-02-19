@@ -1,16 +1,17 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AnimatedCursor from 'react-animated-cursor'
-import MenuBar from './Components/MenuBar/MenuBar'
-import Home from './Components/Home/Home'
-import ContactMe from './Components/ContactMe/ContactMe'
-import AboutMe from './Components/AboutMe/AboutMe'
-import AllProjects from './Components/AllProjects/AllProjects'
-import MyBlog from './Components/MyBlog/MyBlog'
-import NotFound from './Components/NotFound/NotFound'
-import Footer from './Components/Footer/Footer'
-import ProjectDetail from './Components/ProjectDetail/ProjectDetail'
+import MenuBar from './Components/MenuBar/MenuBar';
+import Home from './Components/Home/Home';
+import ContactMe from './Components/ContactMe/ContactMe';
+import AboutMe from './Components/AboutMe/AboutMe';
+import AllProjects from './Components/AllProjects/AllProjects';
+import MyBlog from './Components/MyBlog/MyBlog';
+import NotFound from './Components/NotFound/NotFound';
+import Footer from './Components/Footer/Footer';
+import ProjectDetail from './Components/ProjectDetail/ProjectDetail';
+
 
 function App() {
   return (
@@ -54,7 +55,7 @@ function App() {
         <Footer />
       </Router>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

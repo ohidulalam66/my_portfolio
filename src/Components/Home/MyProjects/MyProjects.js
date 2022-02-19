@@ -1,23 +1,23 @@
-import React from 'react'
-import { Card, Container, Row } from 'react-bootstrap'
-import Flip from 'react-reveal/Flip'
-import Fade from 'react-reveal/Fade'
-import { Link } from 'react-router-dom'
-import './MyProjects.css'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/swiper-bundle.min.css'
-import 'swiper/swiper.min.css'
-import 'swiper/components/effect-coverflow/effect-coverflow.min.css'
-import 'swiper/components/navigation/navigation.min.css'
-import 'swiper/components/pagination/pagination.min.css'
+import React from 'react';
+import { Card, Container, Row } from 'react-bootstrap';
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
+import './MyProjects.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
+import 'swiper/components/effect-coverflow/effect-coverflow.min.css';
+import 'swiper/components/navigation/navigation.min.css';
+import 'swiper/components/pagination/pagination.min.css';
 import SwiperCore, {
   EffectCoverflow,
   Navigation,
   Pagination,
   Autoplay,
-} from 'swiper'
+} from 'swiper';
 
-SwiperCore.use([EffectCoverflow, Navigation, Pagination, Autoplay])
+SwiperCore.use([EffectCoverflow, Navigation, Pagination, Autoplay]);
 
 const MyProjects = () => {
   return (
@@ -133,11 +133,7 @@ const MyProjects = () => {
         </Link>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default MyProjects
-
-/*
-
-*/
+export default MyProjects;

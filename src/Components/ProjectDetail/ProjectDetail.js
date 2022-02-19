@@ -1,26 +1,26 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import Flip from 'react-reveal/Flip'
-import Fade from 'react-reveal/Fade'
-import { useParams } from 'react-router'
-import Loading from '../Loading/Loading'
+import React, { useEffect, useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
+import { useParams } from 'react-router';
+import Loading from '../Loading/Loading';
 
 const ProjectDetail = () => {
-  const { projectId } = useParams()
-  const [project, setProject] = useState({})
-  const [isLoading, setIsLoading] = useState(true)
+  const { projectId } = useParams();
+  const [project, setProject] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
   // const tech = project.technology;
   // const techSplit = tech.split(" ");
 
   useEffect(() => {
-    const url = `/projectsApi/project${projectId}.json`
+    const url = `/projectsApi/project${projectId}.json`;
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setProject(data))
-    setIsLoading(false)
-  }, [])
+      .then((data) => setProject(data));
+    setIsLoading(false);
+  }, []);
 
   return (
     <>
@@ -65,7 +65,7 @@ const ProjectDetail = () => {
                                         {singleTech}{" "}
                                     </span>
                                 ))
-                            } */}
+                            }; */}
               </Col>
               <Col sm={12} md={6}>
                 <p>
@@ -103,15 +103,15 @@ const ProjectDetail = () => {
                         Server
                       </a>
                     </button>
-                  )}
+                  )};
                 </div>
               </Col>
             </Row>
           </Fade>
-        )}
+        )};
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default ProjectDetail
+export default ProjectDetail;

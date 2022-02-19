@@ -1,18 +1,18 @@
-import React from 'react'
-import './ContactMe.css'
-import { Col, Container, Image, Row } from 'react-bootstrap'
-import Flip from 'react-reveal/Flip'
-import LightSpeed from 'react-reveal/LightSpeed'
-import Bounce from 'react-reveal/Bounce'
-import Form from './Form/Form'
+import React from 'react';
+import './ContactMe.css';
+import { Col, Container, Image, Row } from 'react-bootstrap';
+import Flip from 'react-reveal/Flip';
+import LightSpeed from 'react-reveal/LightSpeed';
+import Bounce from 'react-reveal/Bounce';
+import Form from './Form/Form';
 
 const ContactMe = () => {
-  const ContactPicUrl = 'https://www.emailjs.com/assets/support.svg'
+  const ContactPicUrl = 'https://www.emailjs.com/assets/support.svg';
   // social link
-  const heroEmail = 'mdohidul.alam15@gmail.com'
-  const linkedInUrl = 'https://www.linkedin.com/in/mohammad-ohidul-alam/'
-  const gitHubUrl = 'https://github.com/ohidulalam66'
-  const twitterUrl = 'https://twitter.com/OaNoyon'
+  const heroEmail = 'mdohidul.alam15@gmail.com';
+  const linkedInUrl = 'https://www.linkedin.com/in/mohammad-ohidul-alam/';
+  const gitHubUrl = 'https://github.com/ohidulalam66';
+  const twitterUrl = 'https://twitter.com/OaNoyon';
 
   return (
     <Container>
@@ -96,7 +96,7 @@ const ContactMe = () => {
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default ContactMe
+export default ContactMe;

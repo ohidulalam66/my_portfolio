@@ -1,17 +1,18 @@
-import React from 'react'
-import './Footer.css'
-import { Col, Container, Image, Row } from 'react-bootstrap'
-import Slide from 'react-reveal/Slide'
-import { Link } from 'react-router-dom'
-import { Flip, Fade } from 'react-reveal'
+import React from 'react';
+import './Footer.css';
+import { Col, Container, Image, Row } from 'react-bootstrap';
+import Slide from 'react-reveal/Slide';
+import { Link } from 'react-router-dom';
+import { Flip, Fade } from 'react-reveal';
 
 const Footer = () => {
   const resumeUrl =
-    'https://drive.google.com/file/d/1F28YGvvIAcv16ns5qtdGRrMx9kqHUC4e/view?usp=sharing'
-  const linkedInLink = 'https://www.linkedin.com/in/mohammad-ohidul-alam/'
-  const gitHubLink = 'https://github.com/ohidulalam66'
-  const twitterLink = 'https://twitter.com/OaNoyon'
-  const facebookLink = 'https://www.facebook.com/mohammadohidulalam.moa'
+    'https://drive.google.com/file/d/1F28YGvvIAcv16ns5qtdGRrMx9kqHUC4e/view?usp=sharing';
+  const linkedInLink = 'https://www.linkedin.com/in/mohammad-ohidul-alam/';
+  const gitHubLink = 'https://github.com/ohidulalam66';
+  const twitterLink = 'https://twitter.com/OaNoyon';
+  const facebookLink = 'https://www.facebook.com/mohammadohidulalam.moa';
+  
   return (
     <>
       <div className="firstFooter">
@@ -114,7 +115,7 @@ const Footer = () => {
         </Container>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

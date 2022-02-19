@@ -1,15 +1,15 @@
-import React from 'react'
-import { Container, Image, Navbar } from 'react-bootstrap'
-import { NavLink } from 'react-router-dom'
-import './MenuBar.css'
+import React from 'react';
+import { Container, Image, Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import './MenuBar.css';
 
 const MenuBar = () => {
   const resumeUrl =
-    'https://drive.google.com/file/d/1rpnl7PtyXSaSxIdGkSZdSYx37INLcQQ6/view?usp=sharing'
+    'https://drive.google.com/file/d/1rpnl7PtyXSaSxIdGkSZdSYx37INLcQQ6/view?usp=sharing';
   return (
     <>
       <Navbar
-        className="navbar mt-5 w-75 mx-auto rounded sticky-top"
+        className="navbar mt-3 w-75 mx-auto rounded sticky-top"
         variant="dark"
         expand="lg"
       >
@@ -61,8 +61,9 @@ const MenuBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      {/* <h1>hello World</h1> */}
     </>
-  )
-}
+  );
+};
 
-export default MenuBar
+export default MenuBar;
