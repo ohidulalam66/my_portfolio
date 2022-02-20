@@ -9,7 +9,7 @@ const AllProjects = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const url = "http://localhost:5000/getProjects";
+    const url = "https://serene-brushlands-78099.herokuapp.com/getProjects";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProjects(data));

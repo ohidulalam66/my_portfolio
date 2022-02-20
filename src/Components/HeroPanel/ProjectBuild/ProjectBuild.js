@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 const ProjectBuild = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/projectBuild", {
+    fetch("https://serene-brushlands-78099.herokuapp.com/projectBuild", {
       method: "POST",
       headers: {
         "content-type": "application/json",

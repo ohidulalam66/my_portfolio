@@ -11,7 +11,7 @@ const ProjectEdit = () => {
   const [editProject, setEditProject] = useState({});
 
   useEffect(() => {
-    const url = `http://localhost:5000/getProjects/${id}`;
+    const url = `https://serene-brushlands-78099.herokuapp.com/getProjects/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setEditProject(data));
@@ -91,7 +91,7 @@ const ProjectEdit = () => {
 
   const editProjectHandle = (e) => {
     e.preventDefault();
-    const url = `http://localhost:5000/updateProject/${id}`;
+    const url = `https://serene-brushlands-78099.herokuapp.com/updateProject/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
