@@ -1,0 +1,12 @@
+input,
+textarea {
+  border: none;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #bababa, -5px -5px 10px #ffffff;
+  width: 100%;
+  margin: auto;
+}
+
+.button {
+  background: #bababa;
+}

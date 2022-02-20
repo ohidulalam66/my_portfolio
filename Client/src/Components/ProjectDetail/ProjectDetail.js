@@ -1,18 +1,20 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import Flip from 'react-reveal/Flip';
-import Fade from 'react-reveal/Fade';
-import { useParams } from 'react-router';
-import Loading from '../Loading/Loading';
+import React, { useEffect, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import Flip from "react-reveal/Flip";
+import Fade from "react-reveal/Fade";
+import { useParams } from "react-router";
+import Loading from "../Loading/Loading";
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const [project, setProject] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
-  // const tech = project.technology;
+  // const tech =
+  //   "React CSS3 React-router Firebase-Authentication React-bootstrap React-Hook-Form Node.js Express.js MongoDB Heroku React-Spring React-Simple-Snackbar";
   // const techSplit = tech.split(" ");
+  // console.log(techSplit);
 
   useEffect(() => {
     const url = `/projectsApi/project${projectId}.json`;
@@ -51,21 +53,20 @@ const ProjectDetail = () => {
                   <span className="fw-bold">End:</span> {project.end}
                 </p>
                 <p>
-                  <span className="fw-bold">Technology:</span>{' '}
+                  <span className="fw-bold">Technology:</span>{" "}
                   {project.technology}
                 </p>
-                {/* {
-                                techSplit.map(singleTech => (
-                                    <span
-                                        style={{
-                                            backgroundColor: '#E5E7EB'
-                                        }}
-                                        className="px-2 py-1 rounded me-1 "
-                                    >
-                                        {singleTech}{" "}
-                                    </span>
-                                ))
-                            }; */}
+                {/* {techSplit.map((singleTech) => (
+                  <span
+                    style={{
+                      backgroundColor: "#E5E7EB",
+                    }}
+                    className="px-2 py-1 m-1 rounded-pill"
+                  >
+                    {singleTech}{" "}
+                  </span>
+                ))}
+                ; */}
               </Col>
               <Col sm={12} md={6}>
                 <p>
@@ -103,12 +104,14 @@ const ProjectDetail = () => {
                         Server
                       </a>
                     </button>
-                  )};
+                  )}
+                  ;
                 </div>
               </Col>
             </Row>
           </Fade>
-        )};
+        )}
+        ;
       </Container>
     </>
   );

@@ -1,10 +1,10 @@
-import React from 'react';
-import './AboutMe.css';
-import Flip from 'react-reveal/Flip';
-import Fade from 'react-reveal/Fade';
-import Roll from 'react-reveal/Roll';
-import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
+import React from "react";
+import "./AboutMe.css";
+import Flip from "react-reveal/Flip";
+import Fade from "react-reveal/Fade";
+import Roll from "react-reveal/Roll";
+import { Link } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 
 const AboutMe = () => {
   return (
@@ -27,20 +27,20 @@ const AboutMe = () => {
               </Roll>
             </Col>
             <Col xs={12} md={8}>
-              <p style={{ textAlign: 'justify' }}>
+              <p style={{ textAlign: "justify" }}>
                 I'm Mohammad Ohidul Alam from Bangladesh, and I work in Junior
                 Web Development. I am currently studying BSc at Premier
                 University through CSE. I really enjoy working as well as
                 learning languages and frameworks like JS, React JS. Also, I
                 have ideas about Bootstrap, React Bootstrap, Tailwind CSS, and
                 Material UI about my Design. Node JS, Express, and MongoDB also
-                have ideas about the backend. I have experience of 10+ web{' '}
+                have ideas about the backend. I have experience of 10+ web{" "}
                 <Link
-                  to="/projects"
+                  to="/allProjects"
                   className="text-decoration-none cool-link fw-bold"
                 >
                   projects
-                </Link>{' '}
+                </Link>{" "}
                 by using JavaScript, React.js, Node.js, MongoDB and other
                 technologies. I have also solid knowledge of CSS framework like
                 bootstrap, tailwind, material-ui. Outside of programming, I

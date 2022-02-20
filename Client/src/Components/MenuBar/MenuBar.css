@@ -1,0 +1,14 @@
+.navbar {
+  background: rgba(0, 0, 0, 0.705);
+  /* -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000; */
+}
+.heroLogo {
+  width: 65px;
+}
+.active {
+  color: mediumvioletred;
+}
+.nav-link {
+  font-size: 18px;
+}
