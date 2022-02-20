@@ -3,10 +3,33 @@ import "./ProjectBuild.css";
 import { Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { Flip } from "react-reveal";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ProjectBuild = () => {
   const { register, handleSubmit, reset } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    fetch("http://localhost:5000/projectBuild", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        if (result) {
+          toast.success("Your Project Build", {
+            position: "bottom-center",
+          });
+          reset();
+        } else {
+          toast.error("Your Project Build has not been submitted", {
+            position: "bottom-center",
+          });
+        }
+      });
+  };
 
   return (
     <>
@@ -93,6 +116,7 @@ const ProjectBuild = () => {
             Build
           </button>
         </Form>
+        <ToastContainer />
       </Container>
     </>
   );

@@ -37,37 +37,44 @@ async function run() {
       res.send(projects);
     });
 
-    //   app.get('/getPizza/:id', async (req, res) => {
-    //     const id = req.params.id
-    //     const query = { _id: ObjectId(id) }
-    //     const pizza = await pizzaCollection.findOne(query)
-    //     res.send(pizza)
-    //   })
+    app.get("/getProjects/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const project = await projectsCollection.findOne(query);
+      res.send(project);
+    });
 
-    //   app.put('/updatePizza/:id', async (req, res) => {
-    //     const id = req.params.id
-    //     const updatedPizza = req.body
-    //     const filter = { _id: ObjectId(id) }
-    //     const options = { upsert: true }
-    //     const updateDoc = {
-    //       $set: {
-    //         name: updatedPizza.name,
-    //         image: updatedPizza.image,
-    //         price: updatedPizza.price,
-    //         star: updatedPizza.star,
-    //         description: updatedPizza.description,
-    //       },
-    //     }
-    //     const result = await pizzaCollection.updateOne(filter, updateDoc, options)
-    //     res.json(result)
-    //   })
+    app.put("/updateProject/:id", async (req, res) => {
+      const id = req.params.id;
+      const updatedProject = req.body;
+      const filter = { _id: ObjectId(id) };
+      const options = { upsert: true };
+      const updateDoc = {
+        $set: {
+          projectName: updatedProject.projectName,
+          image: updatedProject.image,
+          startDate: updatedProject.startDate,
+          endDate: updatedProject.endDate,
+          details: updatedProject.details,
+          live: updatedProject.live,
+          githubClient: updatedProject.githubClient,
+          githubServer: updatedProject.githubServer,
+        },
+      };
+      const result = await projectsCollection.updateOne(
+        filter,
+        updateDoc,
+        options
+      );
+      res.json(result);
+    });
 
-    //   app.delete('/deletePizzas/:id', async (req, res) => {
-    //     const id = req.params.id
-    //     const query = { _id: ObjectId(id) }
-    //     const result = await pizzaCollection.deleteOne(query)
-    //     res.json(result)
-    //   })
+    app.delete("/deleteProject/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const result = await projectsCollection.deleteOne(query);
+      res.json(result);
+    });
   } finally {
     // await client.close();
   }

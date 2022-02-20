@@ -16,6 +16,7 @@ import ProjectBuild from "./Components/HeroPanel/ProjectBuild/ProjectBuild";
 import BlogBuild from "./Components/HeroPanel/BlogBuild/BlogBuild";
 import ProjectUpdate from "./Components/HeroPanel/ProjectUpdate/ProjectUpdate";
 import BlogUpdate from "./Components/HeroPanel/BlogUpdate/BlogUpdate";
+import ProjectEdit from "./Components/HeroPanel/ProjectUpdate/ProjectEdit/ProjectEdit";
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
           </Route>
           <Route path="/projectUpdate">
             <ProjectUpdate />
+          </Route>
+          <Route path="/updateProject/:id">
+            <ProjectEdit />
           </Route>
           <Route path="/blogUpdate">
             <BlogUpdate />

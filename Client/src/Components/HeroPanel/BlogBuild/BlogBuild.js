@@ -3,10 +3,13 @@ import { Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { Flip } from "react-reveal";
 import "./BlogBuild.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const BlogBuild = () => {
   const { register, handleSubmit, reset } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const onSubmit = (data) => {};
 
   return (
     <>
@@ -66,6 +69,7 @@ const BlogBuild = () => {
             Build
           </button>
         </Form>
+        <ToastContainer />
       </Container>
     </>
   );

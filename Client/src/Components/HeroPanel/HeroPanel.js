@@ -36,7 +36,10 @@ const HeroPanel = () => {
                   <Card.Title className="fw-bold text-uppercase">
                     Project Build
                   </Card.Title>
-                  <Link to="/projectBuild" className="text-decoration-none">
+                  <Link
+                    to="/projectBuild"
+                    className="text-decoration-none dashboardLink"
+                  >
                     Click Here
                   </Link>
                 </Col>
@@ -59,7 +62,10 @@ const HeroPanel = () => {
                   <Card.Title className="fw-bold text-uppercase">
                     Blog Build
                   </Card.Title>
-                  <Link to="/blogBuild" className="text-decoration-none">
+                  <Link
+                    to="/blogBuild"
+                    className="text-decoration-none dashboardLink"
+                  >
                     Click Here
                   </Link>
                 </Col>
@@ -82,7 +88,10 @@ const HeroPanel = () => {
                   <Card.Title className="fw-bold text-uppercase">
                     Project Update
                   </Card.Title>
-                  <Link to="/projectUpdate" className="text-decoration-none">
+                  <Link
+                    to="/projectUpdate"
+                    className="text-decoration-none dashboardLink"
+                  >
                     Click Here
                   </Link>
                 </Col>
@@ -105,7 +114,10 @@ const HeroPanel = () => {
                   <Card.Title className="fw-bold text-uppercase">
                     Blog Update
                   </Card.Title>
-                  <Link to="/blogUpdate" className="text-decoration-none">
+                  <Link
+                    to="/blogUpdate"
+                    className="text-decoration-none dashboardLink"
+                  >
                     Click Here
                   </Link>
                 </Col>
