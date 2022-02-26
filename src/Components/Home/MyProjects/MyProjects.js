@@ -1,47 +1,47 @@
-import React from 'react';
-import { Card, Container, Row } from 'react-bootstrap';
-import Flip from 'react-reveal/Flip';
-import Fade from 'react-reveal/Fade';
-import { Link } from 'react-router-dom';
-import './MyProjects.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css';
-import 'swiper/swiper.min.css';
-import 'swiper/components/effect-coverflow/effect-coverflow.min.css';
-import 'swiper/components/navigation/navigation.min.css';
-import 'swiper/components/pagination/pagination.min.css';
+import React from "react";
+import { Card, Container, Row } from "react-bootstrap";
+import Flip from "react-reveal/Flip";
+import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
+import "./MyProjects.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
+import "swiper/components/effect-coverflow/effect-coverflow.min.css";
+import "swiper/components/navigation/navigation.min.css";
+import "swiper/components/pagination/pagination.min.css";
 import SwiperCore, {
   EffectCoverflow,
   Navigation,
   Pagination,
   Autoplay,
-} from 'swiper';
+} from "swiper";
 
 SwiperCore.use([EffectCoverflow, Navigation, Pagination, Autoplay]);
 
 const MyProjects = () => {
   return (
     <Container>
-      <h3 className="my-5 text-center text-danger mb-4 underLine">
+      <h3 className="my-3 text-center text-danger mb-2 underLine">
         <Flip top cascade>
           <span>
             <i className="fab fa-staylinked"></i> Projects
           </span>
         </Flip>
       </h3>
-      <Row className="my-5">
+      <Row className="my-2">
         <Fade bottom>
           <Swiper
             // style={{ padding: 50 }}
             navigation={true}
-            effect={'coverflow'}
+            effect={"coverflow"}
             grabCursor={true}
             // centeredSlides={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
             }}
-            slidesPerView={'auto'}
+            slidesPerView={"auto"}
             // loop={true}
             coverflowEffect={{
               rotate: 50,

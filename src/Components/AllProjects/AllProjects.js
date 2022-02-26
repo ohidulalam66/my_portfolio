@@ -22,7 +22,7 @@ const AllProjects = () => {
         <h3 className="my-5 text-center text-danger mb-4 underLine">
           <Flip top cascade>
             <span>
-              <i class="far fa-folder-open"></i> All Projects
+              <i className="far fa-folder-open"></i> All Projects
             </span>
           </Flip>
         </h3>
@@ -34,16 +34,17 @@ const AllProjects = () => {
               {projects
                 .map((project) => (
                   <Row
-                    key={project.id}
-                    className="mb-5 py-5 px-3 shadow rounded projectCard"
+                    key={project._id}
+                    className="my-5 mx-2 mx-md-0 py-3 px-2 shadow rounded g-4"
                   >
                     <Col sm={12} md={6}>
-                      <Image src={project?.image} className="img-fluid" />
+                      <Image
+                        src={project?.image}
+                        className=" rounded img-thumbnail img-fluid"
+                      />
                     </Col>
                     <Col sm={12} md={6} className="mt-5 mt-md-0">
-                      <h4 className="fw-bold text-danger">
-                        {project?.projectName}
-                      </h4>
+                      <h4 className="fw-bolder">{project?.projectName}</h4>
                       <p>
                         <span className="fw-bold">Start: </span>
                         {project?.startDate}
@@ -103,7 +104,6 @@ const AllProjects = () => {
             </div>
           </Fade>
         )}
-        ;
       </Container>
     </>
   );

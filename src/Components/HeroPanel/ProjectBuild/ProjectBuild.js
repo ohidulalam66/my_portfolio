@@ -110,7 +110,7 @@ const ProjectBuild = () => {
           />
           <br />
           <button
-            className="px-2 py-1 mt-3 text-center text-uppercase ms-auto button"
+            className="btnLink px-2 py-1 mt-3 text-center text-uppercase ms-auto button"
             type="submit"
           >
             Build

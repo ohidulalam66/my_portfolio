@@ -9,7 +9,28 @@ import "react-toastify/dist/ReactToastify.css";
 const BlogBuild = () => {
   const { register, handleSubmit, reset } = useForm();
 
-  const onSubmit = (data) => {};
+  const onSubmit = (data) => {
+    fetch("https://serene-brushlands-78099.herokuapp.com/blogBuild", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        if (result) {
+          toast.success("Your Blog Build", {
+            position: "bottom-center",
+          });
+          reset();
+        } else {
+          toast.error("Your Blog Build has not been submitted", {
+            position: "bottom-center",
+          });
+        }
+      });
+  };
 
   return (
     <>
@@ -35,6 +56,13 @@ const BlogBuild = () => {
           />
           <input
             type="text"
+            className="py-1 px-4 my-2"
+            {...register("icon")}
+            placeholder="Blog icon"
+            required
+          />
+          <input
+            type="text"
             className="py-1 px-4  my-2"
             {...register("image")}
             placeholder="Image Url"
@@ -45,6 +73,13 @@ const BlogBuild = () => {
             className="py-1 px-4  my-2"
             {...register("date")}
             placeholder="Date"
+            required
+          />
+          <input
+            type="text"
+            className="py-1 px-4  my-2"
+            {...register("readingTime")}
+            placeholder="Reading Time"
             required
           />
           <input
@@ -63,7 +98,7 @@ const BlogBuild = () => {
           />
           <br />
           <button
-            className="px-2 py-1 mt-3 text-center text-uppercase ms-auto button"
+            className="px-2 py-1 mt-3 text-center text-uppercase ms-auto btnLink"
             type="submit"
           >
             Build

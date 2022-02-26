@@ -11,8 +11,7 @@ const ProjectDetail = () => {
   const [project, setProject] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
-  // const tech =
-  //   "React CSS3 React-router Firebase-Authentication React-bootstrap React-Hook-Form Node.js Express.js MongoDB Heroku React-Spring React-Simple-Snackbar";
+  // const tech = project.technology;
   // const techSplit = tech.split(" ");
   // console.log(techSplit);
 
@@ -45,7 +44,7 @@ const ProjectDetail = () => {
             </Row>
             <Row className="my-4">
               <Col sm={12} md={6}>
-                <h3 className="fw-bold text-danger">{project.name}</h3>
+                <h3 className="fw-bolder">{project.name}</h3>
                 <p>
                   <span className="fw-bold">Start:</span> {project.start}
                 </p>
@@ -65,14 +64,13 @@ const ProjectDetail = () => {
                   >
                     {singleTech}{" "}
                   </span>
-                ))}
-                ; */}
+                ))} */}
               </Col>
               <Col sm={12} md={6}>
                 <p>
                   <span className="fw-bold">Details:</span> {project.details}
                 </p>
-                <div className="mt-5">
+                <div className="mt-3">
                   <button>
                     <a
                       href={project.live}
@@ -105,13 +103,11 @@ const ProjectDetail = () => {
                       </a>
                     </button>
                   )}
-                  ;
                 </div>
               </Col>
             </Row>
           </Fade>
         )}
-        ;
       </Container>
     </>
   );

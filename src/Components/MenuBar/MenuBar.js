@@ -1,15 +1,16 @@
-import React from 'react';
-import { Container, Image, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
-import './MenuBar.css';
+import React from "react";
+import { Container, Image, Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import ReactTooltip from "react-tooltip";
+import "./MenuBar.css";
 
 const MenuBar = () => {
   const resumeUrl =
-    'https://drive.google.com/file/d/1rpnl7PtyXSaSxIdGkSZdSYx37INLcQQ6/view?usp=sharing';
+    "https://drive.google.com/file/d/1rpnl7PtyXSaSxIdGkSZdSYx37INLcQQ6/view?usp=sharing";
   return (
     <>
       <Navbar
-        className="navbar mt-3 w-75 mx-auto rounded sticky-top"
+        className="mx-auto rounded sticky-top bg-dark"
         variant="dark"
         expand="lg"
       >
@@ -35,6 +36,8 @@ const MenuBar = () => {
               </li>
               <li className="nav-item">
                 <a
+                  data-tip
+                  data-for="onlinePdf"
                   className="nav-link me-4"
                   rel="noreferrer"
                   href={resumeUrl}
@@ -42,6 +45,9 @@ const MenuBar = () => {
                 >
                   <i className="fas fa-file"></i> Resume
                 </a>
+                <ReactTooltip id="onlinePdf" aria-haspopup="true">
+                  <p>ONLINE PDF FILE</p>
+                </ReactTooltip>
               </li>
               <li className="nav-item">
                 <NavLink

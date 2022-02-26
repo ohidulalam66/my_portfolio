@@ -7,13 +7,14 @@ import RubberBand from "react-reveal/RubberBand";
 import Zoom from "react-reveal/Zoom";
 import ParticlesBg from "particles-bg";
 import { Typewriter } from "react-simple-typewriter";
+import ReactTooltip from "react-tooltip";
 
 const HeroSection = () => {
   const heroProfilePicUrl = "https://i.ibb.co/WVTpGfn/hero.gif";
   const resumeDownload =
     "https://drive.google.com/uc?export=download&id=1F28YGvvIAcv16ns5qtdGRrMx9kqHUC4e";
   return (
-    <Container className="pb-5 extraMargin">
+    <Container className="pb-3 extraMargin">
       <ParticlesBg color="#afd4cd" num={100} type="cobweb" bg={true} />
       <Row className="d-flex justify-content-center align-items-center">
         <Col sm={12} md={4} style={{ textAlign: "center" }}>
@@ -59,12 +60,17 @@ const HeroSection = () => {
             </p>
             <div>
               <a
+                data-tip
+                data-for="downloadPdf"
                 href={resumeDownload}
                 className="text-decoration-none btnDownloadResume px-3 py-2 text-uppercase"
                 type="button"
               >
                 <i className="fas fa-file-download"></i> Download Resume
               </a>
+              <ReactTooltip id="downloadPdf" aria-haspopup="true">
+                <p>DOWNLOAD PDF FILE</p>
+              </ReactTooltip>
               <Link to="/contact">
                 <button className="btnContactMe mx-0 mx-md-2 px-3 py-2 text-uppercase mt-3 mt-md-0">
                   <i className="fas fa-paper-plane"></i> Contact Me
@@ -75,7 +81,7 @@ const HeroSection = () => {
         </Col>
       </Row>
       <Bounce bottom>
-        <p className="mt-5">
+        <p className="mt-3">
           <span className="fs-2 fw-bold">Hi there!</span> I'm Mohammad Ohidul
           Alam from Bangladesh, and I work in Junior Web Development. I am
           currently studying B.Sc at Premier University through CSE. I really
